@@ -44,15 +44,25 @@ public class Ama {
 		 for(int i=0;i<mobileprice.size();i++)
 		  { 
 		WebElement mobcost = mobileprice.get(i);
-		  String pr =mobcost.getText().replace(",","").replace("₹",""); 
-		  int price =Integer.parseInt(pr);
-		  prices.add(price); 
+	  String pr =mobcost.getText().replace(",","").replace("₹",""); 
+	  System.out.println(pr);
+	  //String tr = pr.trim();
+	 // System.out.println(tr);
+	 // System.out.println(tr);
+	 // int price =Integer.parseInt(pr);
+	  
+		  //boolean emp = pr.isEmpty();	
+			//System.out.println(emp);
+		//String tr = price.trim();
+			//System.out.println(tr);
+			//int price =Integer.parseInt(tr);
+		    //prices.add(price); 
 		  }
 		 
 		 
-		Collections.sort(prices);
+		//Collections.sort(prices);
 		//System.out.println(prices);
-		System.out.println("Least Price: " + prices.get(0));
+		//System.out.println("Least Price: " + prices.get(0));
 	}
 
 }
